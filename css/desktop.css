@@ -64,17 +64,17 @@ section,
 	/* .container{max-width: 1480px;} */
 }
 @media screen and (min-width:1280px) and ( max-width:1539px) {
-	html{font-size: 15px;}
+	/* html{font-size: 15px;} */
 	/* .container{max-width: 1280px;} */
 }
 @media screen and (min-width:768px) and ( max-width:1279px) {
-	html{font-size: 14px;}
+	/* html{font-size: 14px;} */
 	.container{max-width: none;}
 }
 .is_sp{display: none;}
 .is_tab{display: none;}
 @media screen and (min-width:751px) and ( max-width:1025px) {
-	html{font-size: 13px;}
+	/* html{font-size: 13px;} */
 	.is_hidden_tab{display: none;}
 	.is_tab{display: block;}
 } 
@@ -112,22 +112,94 @@ section,
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ ベース設定 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.btn{
+	margin-top: 2rem;
+}
 .btn a{
+	position: relative;
 	font-size: 1.25rem;
 	font-weight: 600;
+	letter-spacing: 0.2rem;
 	border: solid 1px #000;
 	padding: 0.4rem 1.5rem;
-	margin-top: 2rem;
+	width: 25rem;
+	background: #fff;
 	transition: .3s;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+}
+.btn.bk a{
+	color: #fff;
+	background: #000;
 }
 .btn a:hover{
 	color: #fff;
 	background: #000;
 }
+.btn.bk a:hover{
+	color: #000;
+	background: #fff;
+}
+.btn a span{
+	font-size: 0.875rem;
+	margin-left: 1.5rem;
+}
 @keyframes updown{
-	0%{ bottom: 10rem; }
-	50%{ bottom: 3rem; }
-	100%{ bottom: 10rem; }
+	0%{
+		bottom: 10rem;
+		transform: rotate(0);
+	}
+	50%{
+		bottom: 2rem;
+		transform: rotate(180deg);
+	}
+	100%{
+		bottom: 10rem;
+		transform: rotate(360deg);
+	}
+}
+@keyframes updown02{
+	0%{
+		top: 50%;
+		transform: translateY(-50%) rotate(0);
+	}
+	50%{
+		top: 50%;
+		transform: translateY(-50%) translateY(10rem) rotate(180deg);
+	}
+	100%{
+		top: 50%;
+		transform: translateY(-50%) rotate(360deg);
+	}
+}
+@keyframes updown03{
+	0%{
+		top: 0;
+		transform: rotate(0);
+	}
+	50%{
+		top: 12rem;
+		transform: rotate(180deg);
+	}
+	100%{
+		top: 0;
+		transform: rotate(360deg);
+	}
+}
+@keyframes updown04{
+	0%{
+		bottom: 2rem;
+		transform: rotate(0);
+	}
+	50%{
+		bottom: -15rem;
+		transform: rotate(180deg);
+	}
+	100%{
+		bottom: 2rem;
+		transform: rotate(360deg);
+	}
 }
 /* @keyframes updown02{
 	0%{ top: 0; }
@@ -147,6 +219,7 @@ section,
 	letter-spacing: 0.1rem;
 	font-size: 1.125rem;
 }
+.fig{ position: absolute; }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ ナビ ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
@@ -161,6 +234,10 @@ header{
 	align-items: center;
 	justify-content: flex-start;
 	z-index: 50000;
+	transition: .3s;
+}
+header.active{
+	height: 6rem;
 }
 .header_in{
 	width: 95%;
@@ -168,10 +245,21 @@ header{
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
+	transition: .3s;
+}
+header.active .header_in{
+	align-items: center;
 }
 .header_in .logo{
 	width: 9rem;
 	margin-left: 1.5rem;
+	transition: .3s;
+}
+header.active .header_in .logo{
+	width: 5rem;
+}
+.header_in .logo a{
+	line-height: 1;
 }
 
 
@@ -197,7 +285,9 @@ header{
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ ナビ ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ フッター ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
- 
+footer{
+	padding: 4rem 0;
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ フッター ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
@@ -207,6 +297,7 @@ header{
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: flex-start;
+	margin-left: 2rem;
 }
 .top01 .img01{
 	margin: 0 8rem 0 auto;
@@ -237,9 +328,6 @@ header{
 .top01 .fig_wrap{
 	position: relative;
 }
-.top01 .fig{
-	position: absolute;
-}
 .top01 .fig01{
 	top: 0;
 	left: 0;
@@ -251,23 +339,201 @@ header{
 .top01 .txt .fig02{
 	bottom: 0;
 	right: -30%;
-	animation: updown 12s ease-in infinite;
+	animation: updown 15s linear infinite;
 }
 .top01 .fig03{
-	top: 9rem;
-	right: 2rem;
+	top: 11rem;
+	right: 1rem;
 }
 .top01 .fig04{
-	top: 15rem;
-	right: -2rem;
+	top: 16.5rem;
+	right: -2.5rem;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .top02{
-	padding: 25rem 0;
+	padding: 2rem 0;
+}
+.top02 .box{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin-left: 2rem;
+}
+.top02 .img01{
+	position: relative;
+	margin: 0 7rem 0 auto;
+}
+.top02 .img01 .fig01{
+	bottom: 100%;
+	right: 2rem;
+	transform: translateY(4rem);
+}
+.top02 .txt{
+	position: relative;
+	margin: -2.5rem 13rem 0 auto;
+	z-index: 2;
+}
+.top02 .txt h2,
+.top03 .txt h2,
+.top04 .txt h2{
+	font-size: 2.625rem;
+	font-weight: 600;
+	letter-spacing: 0.3rem;
+}
+.top02 .txt p,
+.top03 .txt p,
+.top04 .txt p{
+	font-size: 1.125rem;
+	letter-spacing: 0.15rem;
+}
+.top02 .fig02{
+	top: 50%;
+	left: 3rem;
+	transform: translateY(-50%);
+	animation: updown02 15s linear infinite;
+}
+.top02 .fig03{
+	top: 0;
+	right: 0.5rem;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ03 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top03{
+	padding: 2rem 0 4rem;
+}
+.top03 .box{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin-left: 2rem;
+}
+.top03 .img01{
+	position: relative;
+	margin: 0 15rem 0 auto;
+}
+.top03 .fig01{
+	top: -15rem;
+	left: -7.5rem;
+}
+.top03 .txt{
+	position: relative;
+	width: 100%;
+	margin-top: 2rem;
+}
+.top03 .txt .btn{
+	margin-top: 4rem;
+}
+.top03 .txt .fig02{
+	bottom: 15rem;
+	left: 6.5rem;
+}
+.top03 .txt .fig03{
+	top: 2.5rem;
+	right: 7rem;
+	animation: updown03 15s linear infinite;
+	z-index: 2;
+}
+.top03 .txt .img02{
+	position: absolute;
+	bottom: 0;
+	right: 7rem;
+}
+
+.top03 .fig04{
+	top: 0;
+	right: 0.5rem;
+}
+.top03 .fig05{
+	bottom: 0;
+	right: 0.5rem;
+}
+.top03 .fig_txt{
+	bottom: unset;
+	top: 13rem;
+	right: 0;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ03 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ04 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top04{
+	padding: 4rem 0 2rem;
+}
+.top04 .box{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin-left: 2rem;
+}
+.top04 .txt{
+	position: relative;
+	margin-left: 14rem;
+	z-index: 2;
+}
+.top04 .txt .fig01{
+	bottom: 2rem;
+	right: -13rem;
+	animation: updown04 15s linear infinite;
+	z-index: -1;
+}
+.top04 .fig_txt{
+	bottom: unset;
+	top:  -1rem;
+	right: 0;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ04 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ05 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top05{
+	padding: 4rem 0 2rem;
+}
+.top05 .box{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin-left: 2rem;
+}
+.top05 .btn_wrap{
+	margin: 7rem 8rem 0 auto;
+}
+.top05 .btn_wrap .btn.bk{
+	margin-top: 1.5rem;
+}
+.top05 .fig02{
+	top: -23rem;
+	left: 9rem;
+}
+.top05 .fig03{
+	top: -13rem;
+	left: 4.5rem;
+}
+.top05 .fig04{
+	top: 0;
+	right: 0.5rem;
+}
+.top05 .fig_txt{
+	bottom: unset;
+	top: 9rem;
+	right: 0;
+}
+.top05 .box02{
+	margin: 8rem auto 0;
+	background: #f2f2f2;
+	padding: 2rem 5rem;
+	letter-spacing: 0.15rem;
+	width: 850px;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ05 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
  

@@ -29,6 +29,14 @@ $(function () {
 		breakpoints: [576, 768, 1024]
 	});
 
-
+	let header = $('header');
+	let offset = header.offset();
+	$(window).on('load scroll', function () {
+		if ($(window).scrollTop() > offset.top) {
+			$('header').addClass('active');
+		} else {
+			$('header').removeClass('active');
+		}
+	});
 
 });
