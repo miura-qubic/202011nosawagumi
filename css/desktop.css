@@ -145,34 +145,6 @@ section,
 	font-size: 0.875rem;
 	margin-left: 1.5rem;
 }
-@keyframes updown{
-	0%{
-		bottom: 10rem;
-		transform: rotate(0);
-	}
-	50%{
-		bottom: 2rem;
-		transform: rotate(180deg);
-	}
-	100%{
-		bottom: 10rem;
-		transform: rotate(360deg);
-	}
-}
-@keyframes updown02{
-	0%{
-		top: 50%;
-		transform: translateY(-50%) rotate(0);
-	}
-	50%{
-		top: 50%;
-		transform: translateY(-50%) translateY(10rem) rotate(180deg);
-	}
-	100%{
-		top: 50%;
-		transform: translateY(-50%) rotate(360deg);
-	}
-}
 @keyframes updown03{
 	0%{
 		top: 0;
@@ -286,7 +258,11 @@ header.active .header_in .logo{
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ フッター ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 footer{
-	padding: 4rem 0;
+	padding: 3rem 0 2rem;
+}
+footer .copyright{
+	font-size: 0.8rem;
+	text-align: center;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ フッター ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
@@ -305,8 +281,8 @@ footer{
 .top01 .txt{
 	margin-top: 3rem;
 	width: 100%;
-	display: flex;
-	justify-content: space-between;
+	/* display: flex; */
+	/* justify-content: space-between; */
 }
 .top01 .txt_in{
 	position: relative;
@@ -334,11 +310,13 @@ footer{
 	/* animation: updown02 10s ease-in infinite; */
 }
 .top01 .img02{
-	margin-top: 9rem;
+	position: absolute;
+	top: 9rem;
+	right: 0;
 }
 .top01 .txt .fig02{
-	bottom: 0;
-	right: -30%;
+	bottom: 12rem;
+	right: 30rem;
 	animation: updown 15s linear infinite;
 }
 .top01 .fig03{
@@ -348,6 +326,20 @@ footer{
 .top01 .fig04{
 	top: 16.5rem;
 	right: -2.5rem;
+}
+@keyframes updown{
+	0%{
+		bottom: 12rem;
+		transform: rotate(0);
+	}
+	50%{
+		bottom: 2rem;
+		transform: rotate(180deg);
+	}
+	100%{
+		bottom: 12rem;
+		transform: rotate(360deg);
+	}
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
@@ -399,6 +391,20 @@ footer{
 .top02 .fig03{
 	top: 0;
 	right: 0.5rem;
+}
+@keyframes updown02{
+	0%{
+		top: 50%;
+		transform: translateY(-50%) rotate(0);
+	}
+	50%{
+		top: 50%;
+		transform: translateY(-50%) translateY(10rem) rotate(180deg);
+	}
+	100%{
+		top: 50%;
+		transform: translateY(-50%) rotate(360deg);
+	}
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
