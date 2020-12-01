@@ -5,10 +5,9 @@
 /* @media screen and (min-width:1026px) and ( max-width:1279px) {} */
 /* @media screen and (min-width:768px) and ( max-width:1025px) {} */
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ ベース設定 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
-@font-face {
-	font-family: "myfont";
-	src: url(../fonts/.woff) format("woff"),
-				url(../fonts/.otf) format("otf");
+@font-face{
+	font-family: "impact";
+	src: url(../fonts/Impact.ttf) format("truetype");
 }
 
 
@@ -54,11 +53,11 @@ section,
 	padding: 0 50px;
 	margin: 0 auto;
 }
-/* .s_container{
-	width: 90%;
+.s_container{
+	width: 960px;
+	padding: 0 50px;
 	margin: 0 auto;
-	max-width: 960px;
-} */
+}
 @media screen and (min-width:1540px) {
 	/* .l_container{max-width: 1680px;} */
 	/* .container{max-width: 1480px;} */
@@ -113,6 +112,9 @@ section,
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ ベース設定 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.impact{
+	font-family: "impact", sans-serif;
+}
 .btn{
 	margin-top: 2rem;
 }
@@ -750,6 +752,140 @@ footer .copyright{
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ recruit01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ career_step01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.career_step01 .box{
+	margin-top: 3rem;
+}
+.career_step01 .subttl{
+	font-size: 1.5rem;
+	font-weight: 600;
+	text-align: center;
+	letter-spacing: 0.1rem;
+	margin-bottom: 1.5rem;
+}
+.career_step01 .box02 .subttl{
+	margin-bottom: 2.5rem;
+}
+.career_step01 h4{
+	font-size: 1.75rem;
+	font-weight: 600;
+	letter-spacing: 0.2rem;
+}
+.career_step01 .box .item{
+	margin-top: 2rem;
+}
+.career_step01 .box .item .circle_wrap{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.career_step01 .box .item .circle_wrap .circle{
+	border: solid 1px #000;
+	border-radius: 50%;
+	width: 7.5rem;
+	height: 7.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.career_step01 .box .item .circle_wrap .circle p{
+	font-size: 1.125rem;
+	line-height: 1.5;
+	letter-spacing: 0.1rem;
+	text-align: center;
+}
+.career_step01 .box .item .cross{
+	position: relative;
+	width: 6rem;
+	height: 6rem;
+	margin: 1rem auto;
+}
+.career_step01 .box .item .cross::before,
+.career_step01 .box .item .cross::after{
+	position: absolute;
+	content: '';
+	width: 6rem;
+	height: 1px;
+	background: #000;
+	top: 50%;
+	left: 50%;
+}
+.career_step01 .box .item .cross::before{
+	transform: translate(-50%,-50%) rotate(45deg);
+}
+.career_step01 .box .item .cross::after{
+	transform: translate(-50%,-50%) rotate(-45deg);
+}
+.career_step01 .box .item .en{
+	font-size: 1.75rem;
+	text-align: center;
+	margin-top: 1.5rem;
+}
+.career_step01 .box .txt{
+	margin-top: 3rem;
+}
+.career_step01 .box .txt p{
+	font-size: 1.125rem;
+	letter-spacing: 0.1rem;
+}
+
+.career_step01 .box02{
+	margin-top: 8rem;
+}
+.career_step01 .box02 .main_item{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.career_step01 .box02 .main_item .img_wrap{
+	width: 40%;
+}
+.career_step01 .box02 .main_item .img_wrap img{
+	width: 100%;
+	height: auto;
+}
+.career_step01 .box02 .main_item .img_wrap p{
+	text-align: right;
+	letter-spacing: 0.1rem;
+	margin-top: 0.25rem;
+}
+.career_step01 .box02 .main_item .txt{
+	width: 54%;
+	transform: translateY(-1rem);
+}
+.career_step01 .box02 .system{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.career_step01 .box02 .system .item{
+	width: 48%;
+	margin-top: 6rem;
+}
+.career_step01 .box02 .system .item h5{
+	position: relative;
+	font-size: 1.75rem;
+	font-weight: 600;
+	letter-spacing: 0.2rem;
+	text-align: center;
+}
+.career_step01 .box02 .system .item h5::after{
+	position: absolute;
+	content: '';
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%) translateY(0.75rem);
+	width: 2rem;
+	height: 1px;
+	background: #000;
+}
+.career_step01 .box02 .system .item .txt{
+	margin-top: 3rem;
+}
+.career_step01 .box02 .system .item .txt p{
+	letter-spacing: 0.1rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ career_step01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ IE対策 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 @media all and (-ms-high-contrast: none) {
