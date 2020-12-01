@@ -8,10 +8,14 @@ const tabletwidth = 1025;
 {
 	const openMenu = document.getElementById('menu_open');
 	const Nav = document.querySelector('header nav');
+	const Body = document.querySelector('body');
+	const overlay = document.getElementById('overlay');
 
 	openMenu.addEventListener('click', function () {
 		openMenu.classList.toggle('active');
 		Nav.classList.toggle('active');
+		Body.classList.toggle('active');
+		overlay.classList.toggle('active');
 	});
 }
 
@@ -29,7 +33,7 @@ $(function () {
 		breakpoints: [576, 768, 1024]
 	});
 
-	let header = $('header');
+	// ヘッダー追従
 	$(window).on('load scroll', function () {
 		if ($(window).scrollTop() > 100) {
 			$('header').addClass('active');
