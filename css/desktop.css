@@ -49,11 +49,11 @@ section,
 	padding: 0 50px;
 	margin: 0 auto;
 }
-/* .m_container{
-	width: 90%;
+.m_container{
+	width: 1080px;
+	padding: 0 50px;
 	margin: 0 auto;
-	max-width: 1080px;
-} */
+}
 /* .s_container{
 	width: 90%;
 	margin: 0 auto;
@@ -70,6 +70,7 @@ section,
 @media screen and (min-width:768px) and ( max-width:1279px) {
 	/* html{font-size: 14px;} */
 	.container{max-width: none;}
+	.m_container{max-width: none;}
 }
 .is_sp{display: none;}
 .is_tab{display: none;}
@@ -208,7 +209,8 @@ header{
 	z-index: 50000;
 	transition: .3s;
 }
-header.active{
+header.active,
+.lower header{
 	height: 6rem;
 }
 .header_in{
@@ -219,7 +221,8 @@ header.active{
 	justify-content: space-between;
 	transition: .3s;
 }
-header.active .header_in{
+header.active .header_in,
+.lower header .header_in{
 	align-items: center;
 }
 .header_in .logo{
@@ -227,7 +230,8 @@ header.active .header_in{
 	margin-left: 1.5rem;
 	transition: .3s;
 }
-header.active .header_in .logo{
+header.active .header_in .logo,
+.lower header .header_in .logo{
 	width: 5rem;
 }
 .header_in .logo a{
@@ -350,6 +354,7 @@ header nav .btn01 a span{
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ フッター ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 footer{
+	margin-top: 4rem;
 	padding: 3rem 0 2rem;
 }
 footer .copyright{
@@ -619,7 +624,7 @@ footer .copyright{
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ05 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .top05{
-	padding: 4rem 0 2rem;
+	padding: 4rem 0 0;
 }
 .top05 .box{
 	position: relative;
@@ -662,8 +667,88 @@ footer .copyright{
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ05 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
- 
+.lower_top{
+	margin-top: 8rem;
+}
+.lower_top .page_name{
+	position: relative;
+}
+.lower_top .page_name h1{
+	-ms-writing-mode: tb-rl;
+	-webkit-writing-mode: vertical-rl;
+	writing-mode: vertical-rl;
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 1.125rem;
+	font-weight: 500;
+	letter-spacing: 0.5rem;
+	line-height: 1;
+	white-space: nowrap;
+}
+.lower_top .ttl{
+	font-size: 3rem;
+	font-weight: 600;
+	letter-spacing: 0.2rem;
+	text-align: center;
+}
+.txt_indent{
+	display: inline-block;
+	padding-left: 1em;
+	text-indent: -1em;
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ recruit01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.recruit01 table{
+	width: 100%;
+	margin-top: 3.5rem;
+}
+.recruit01 table th,
+.recruit01 table td{
+	border-top: solid 1px #000;
+	padding: 1rem;
+	font-size: 1.125rem;
+	letter-spacing: 0.1rem;
+}
+.recruit01 table th:last-of-type,
+.recruit01 table td:last-of-type{
+	border-bottom: solid 1px #000;
+}
+.recruit01 table th{
+	width: 25%;
+	font-weight: 600;
+}
+.recruit01 table td{
+	width: 75%;
+}
+.recruit01 table td ul{
+	margin-left: 1.125rem;
+}
+.recruit01 table td ul li{
+	list-style: disc;
+}
+.recruit01 .btn_wrap{
+	margin-top: 4rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+.recruit01 .btn_wrap .btn{
+	margin-top: 1.5rem;
+}
+.recruit01 .btn_wrap .btn.bk{
+	margin-top: 0;
+}
+.recruit01 .btn_wrap .btn a{
+	justify-content: center;
+	padding: 0.4rem 1rem;
+}
+.recruit01 .btn_wrap .btn01 a span{
+	margin-left: 0;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ recruit01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ IE対策 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */

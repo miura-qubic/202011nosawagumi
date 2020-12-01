@@ -25,6 +25,9 @@ a{
 	height: 100%;
 	margin-top: 10rem;
 }
+#wrapper.lower{
+	margin-top: 6rem;
+}
 section,
 .section{
 	width: 100%;
@@ -41,13 +44,13 @@ section,
 	margin: 0 auto;
 	padding:0 1.5rem;
 }
-/* .m_container{
+.m_container{
 	width: 100%;
 	max-width: 650px;
 	margin: 0 auto;
-	padding:0 2rem;
+	padding:0 1.5rem;
 }
-.s_container{
+/* .s_container{
 	width: 100%;
 	max-width: 650px;
 	margin: 0 auto;
@@ -149,7 +152,8 @@ header{
 	z-index: 50000;
 	transition: .3s;
 }
-header.active{
+header.active,
+.lower header{
 	height: 5rem;
 }
 .header_in{
@@ -162,13 +166,15 @@ header.active{
 }
 .header_in .logo{
 	width: 7rem;
-	margin: 1.5rem auto 0;
-	transform: translateX(1.5rem);
+	margin: 1.5rem 0 0 50%;
+	transform: translateX(-50%);
 	transition: .3s;
 }
-header.active .header_in .logo{
+header.active .header_in .logo,
+.lower header .header_in .logo{
 	width: 4.5rem;
 	margin: -0.5rem 0 0;
+	transform: translateX(1.5rem);
 }
 .header_in .logo a{
 	line-height: 1;
@@ -182,7 +188,7 @@ header nav{
 	height: 100vh;
 	background: rgba(255,255,255,.95);
 	z-index: 50001;
-	padding: 4rem 1.5rem;
+	padding: 4rem 1.5rem 8.5rem;
 	overflow-y: scroll;
 	transition: .3s;
 }
@@ -262,6 +268,7 @@ header nav .btn01 a span{
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ フッター ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 footer{
+	margin-top: 1rem;
 	padding: 3rem 0 2rem;
 }
 footer .copyright{
@@ -305,7 +312,7 @@ footer .copyright{
 }
 
 .top01 .img02{
-	width: 13.5rem;
+	width: 13rem;
 	margin: 7.5rem 0 0 2rem;
 }
 .top01 .fig_wrap{
@@ -329,12 +336,12 @@ footer .copyright{
 .top01 .fig03{
 	width: 1rem;
 	top: 27rem;
-	right: 5.5rem;
+	right: 4.5rem;
 }
 .top01 .fig04{
 	width: 1rem;
 	top: 31.25rem;
-	right: 2.25rem;
+	right: 2rem;
 }
 
 @keyframes updown{
@@ -515,7 +522,7 @@ footer .copyright{
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ05 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .top05{
-	padding: 2rem 0 1rem;
+	padding: 2rem 0 0;
 }
 .top05 .box{
 	position: relative;
@@ -556,10 +563,84 @@ footer .copyright{
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ05 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
- 
+.lower_top .page_name{
+	position: absolute;
+	top: -4.8rem;
+	right: 3.5rem;
+}
+.lower_top .page_name h1{
+	font-size: 0.875rem;
+	font-weight: 500;
+	line-height: 1;
+	letter-spacing: 0.1rem;
+}
+.lower_top .ttl{
+	font-size: 1.5rem;
+	font-weight: 600;
+	letter-spacing: 0.15rem;
+	text-align: center;
+}
+.txt_indent{
+	display: inline-block;
+	padding-left: 1em;
+	text-indent: -1em;
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
-
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ recruit01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.recruit01{
+	padding: 2rem 0.25rem 0;
+}
+.recruit01 table{
+	width: 100%;
+	margin-top: 2.5rem;
+}
+.recruit01 table tr{
+	display: block;
+	border-top: solid 1px #000;
+	padding: 1rem 0;
+}
+.recruit01 table tr:last-of-type{
+	border-bottom: solid 1px #000;
+}
+.recruit01 table th,
+.recruit01 table td{
+	display: block;
+	font-size: 0.875rem;
+	letter-spacing: 0.1rem;
+	text-align: left;
+}
+.recruit01 table th{
+	font-weight: 600;
+}
+.recruit01 table td ul{
+	margin-left: 0.875rem;
+}
+.recruit01 table td ul li{
+	list-style: disc;
+}
+.recruit01 .btn_wrap{
+	margin-top: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+.recruit01 .btn_wrap .btn{
+	margin-top: 1rem;
+}
+.recruit01 .btn_wrap .btn.bk{
+	margin-top: 0;
+}
+.recruit01 .btn_wrap .btn a{
+	width: 315px;
+	justify-content: center;
+	padding: 0.4rem 0.5rem;
+}
+.recruit01 .btn_wrap .btn01 a span{
+	margin-left: 0;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ recruit01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 
 
