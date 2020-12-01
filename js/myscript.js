@@ -30,9 +30,8 @@ $(function () {
 	});
 
 	let header = $('header');
-	let offset = header.offset();
 	$(window).on('load scroll', function () {
-		if ($(window).scrollTop() > offset.top) {
+		if ($(window).scrollTop() > 100) {
 			$('header').addClass('active');
 		} else {
 			$('header').removeClass('active');

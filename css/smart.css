@@ -100,7 +100,7 @@ section,
 	letter-spacing: 0.1rem;
 	border: solid 1px #000;
 	padding: 0.4rem 1.5rem;
-	width: 19rem;
+	width: 17.5rem;
 	background: #fff;
 	z-index: 2;
 	display: flex;
@@ -204,7 +204,7 @@ footer .copyright{
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .top01{
-	padding: 0 0.5rem;
+	padding: 0 0.25rem;
 }
 .top01 .box{
 	position: relative;
@@ -219,23 +219,26 @@ footer .copyright{
 	margin: 0 auto;
 }
 .top01 .txt{
+	width: 100%;
+	/* margin: 3rem auto 0; */
 	margin-top: 3rem;
 }
 .top01 .txt h2{
-	max-width: 300px;
+	max-width: 315px;
 	width: 100%;
 	margin: 0 auto;
 }
 .top01 .txt h3{
+	width: 315px;
 	font-size: 1.25rem;
 	font-weight: 600;
 	letter-spacing: 0.1rem;
-	margin-top: 1rem;
+	margin: 1rem auto 0;
 }
 
 .top01 .img02{
-	width: 12.5rem;
-	margin-top: 7rem;
+	width: 13.5rem;
+	margin: 7.5rem 0 0 2rem;
 }
 .top01 .fig_wrap{
 	position: relative;
@@ -243,7 +246,7 @@ footer .copyright{
 .top01 .fig01{
 	width: 1.75rem;
 	top: 1.5rem;
-	left: 2rem;
+	left: 3.5rem;
 }
 .top01 .txt p{
 	letter-spacing: 0.1rem;
@@ -252,7 +255,7 @@ footer .copyright{
 .top01 .txt .fig02{
 	width: 2rem;
 	bottom: 23rem;
-	right: 3.5rem;
+	right: 4.5rem;
 	animation: updown 15s linear infinite;
 }
 .top01 .fig03{
@@ -262,21 +265,21 @@ footer .copyright{
 }
 .top01 .fig04{
 	width: 1rem;
-	top: 31rem;
-	right: 2.5rem;
+	top: 31.25rem;
+	right: 2.25rem;
 }
 
 @keyframes updown{
 	0%{
-		bottom: 23rem;
+		bottom: 19rem;
 		transform: rotate(0);
 	}
 	50%{
-		bottom: 13rem;
+		bottom: 12rem;
 		transform: rotate(180deg);
 	}
 	100%{
-		bottom: 23rem;
+		bottom: 19rem;
 		transform: rotate(360deg);
 	}
 }
@@ -284,7 +287,7 @@ footer .copyright{
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .top02{
-	padding: 2rem 0.5rem;
+	padding: 2rem 0.25rem;
 }
 .top02 .box{
 	position: relative;
@@ -292,7 +295,6 @@ footer .copyright{
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: flex-start;
-	margin-left: 2rem;
 }
 .top02 .img01{
 	position: relative;
@@ -301,13 +303,189 @@ footer .copyright{
 }
 .top02 .img01 .fig01{
 	width: 4rem;
-	bottom: 20rem;
+	bottom: 17rem;
 	right: 2rem;
 }
 .top02 .txt{
 	position: relative;
 	margin-top: 1.5rem;
 }
+.top02 .txt h2,
+.top03 .txt h2,
+.top04 .txt h2{
+	font-size: 2rem;
+	font-weight: 600;
+	line-height: 1.5;
+	letter-spacing: 0.15rem;
+	margin-bottom: 1rem;
+}
+.top02 .txt p,
+.top03 .txt p,
+.top04 .txt p{
+	letter-spacing: 0.05rem;
+}
+.top02 .fig04{
+	width: 1rem;
+	top: -9rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ03 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top03{
+	padding: 6rem 0.25rem 1.5rem;
+}
+.top03 .box{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.top03 .img01{
+	position: relative;
+	width: 13.5rem;
+	margin: 0 2.5rem 0 auto;
+}
+.top03 .fig05{
+	width: 6rem;
+	top: -9rem;
+	left: 1.75rem;
+	z-index: 2;
+	animation: updown02 15s linear infinite;
+}
+.top03 .txt{
+	position: relative;
+	margin-top: 9rem;
+}
+.top03 .txt .btn{
+	margin-top: 1rem;
+}
+.top03 .txt .fig02{
+	width: 4rem;
+	top: -28rem;
+	left: 3rem;
+}
+.top03 .txt .fig03{
+	width: 3rem;
+	bottom: 12rem;
+	right: 2.5rem;
+	animation: updown03 15s linear infinite;
+	z-index: 2;
+}
+.top03 .txt .img02{
+	margin-top: 8rem;
+	width: 11.5rem;
+}
+
+@keyframes updown02{
+	0%{
+		top: -9rem;
+		transform: rotate(0);
+	}
+	50%{
+		top: -1rem;
+		transform: rotate(180deg);
+	}
+	100%{
+		top: -9rem;
+		transform: rotate(360deg);
+	}
+}
+@keyframes updown03{
+	0%{
+		bottom: 12rem;
+		transform: rotate(0);
+	}
+	50%{
+		bottom: 5rem;
+		transform: rotate(180deg);
+	}
+	100%{
+		bottom: 12rem;
+		transform: rotate(360deg);
+	}
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ03 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ04 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top04{
+	padding: 1rem 0.25rem 10rem;
+}
+.top04 .box{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.top04 .txt{
+	position: relative;
+	z-index: 2;
+}
+.top04 .txt .fig01{
+	width: 7rem;
+	bottom: -6rem;
+	right: 1.5rem;
+	animation: updown04 15s linear infinite;
+	z-index: -1;
+}
+@keyframes updown04{
+	0%{
+		bottom: -6rem;
+		transform: rotate(0);
+	}
+	50%{
+		bottom: -15rem;
+		transform: rotate(180deg);
+	}
+	100%{
+		bottom: -6rem;
+		transform: rotate(360deg);
+	}
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ04 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ05 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top05{
+	padding: 2rem 0 1rem;
+}
+.top05 .box{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	padding: 0 0.25rem;
+}
+.top05 .btn_wrap{
+	margin-left: auto;
+}
+.top05 .btn_wrap .btn.bk{
+	margin-top: 1.25rem;
+}
+.top05 .btn_wrap .btn a{
+	width: 19rem;
+}
+.top05 .fig02{
+	width: 1.5rem;
+	top: -49.5rem;
+	left: 4rem;
+}
+.top05 .fig03{
+	width: 1.5rem;
+	top: -45rem;
+	left: 1rem;
+}
+.top05 .box02{
+	margin: 5rem auto 0;
+	background: #f2f2f2;
+	padding: 1.5rem;
+	letter-spacing: 0.1rem;
+}
+.top05 .box02 p{
+	font-size: 0.75rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ05 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
  

@@ -145,39 +145,7 @@ section,
 	font-size: 0.875rem;
 	margin-left: 1.5rem;
 }
-@keyframes updown03{
-	0%{
-		top: 0;
-		transform: rotate(0);
-	}
-	50%{
-		top: 12rem;
-		transform: rotate(180deg);
-	}
-	100%{
-		top: 0;
-		transform: rotate(360deg);
-	}
-}
-@keyframes updown04{
-	0%{
-		bottom: 2rem;
-		transform: rotate(0);
-	}
-	50%{
-		bottom: -15rem;
-		transform: rotate(180deg);
-	}
-	100%{
-		bottom: 2rem;
-		transform: rotate(360deg);
-	}
-}
-/* @keyframes updown02{
-	0%{ top: 0; }
-	50%{ top: 2rem; }
-	100%{ top: 0; }
-} */
+
 .vertical_txt{
 	-ms-writing-mode: tb-rl;
 	-webkit-writing-mode: vertical-rl;
@@ -465,6 +433,20 @@ footer .copyright{
 	top: 13rem;
 	right: 0;
 }
+@keyframes updown03{
+	0%{
+		top: 0;
+		transform: rotate(0);
+	}
+	50%{
+		top: 12rem;
+		transform: rotate(180deg);
+	}
+	100%{
+		top: 0;
+		transform: rotate(360deg);
+	}
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ03 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ04 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
@@ -494,6 +476,20 @@ footer .copyright{
 	bottom: unset;
 	top:  -1rem;
 	right: 0;
+}
+@keyframes updown04{
+	0%{
+		bottom: 2rem;
+		transform: rotate(0);
+	}
+	50%{
+		bottom: -15rem;
+		transform: rotate(180deg);
+	}
+	100%{
+		bottom: 2rem;
+		transform: rotate(360deg);
+	}
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ04 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
