@@ -350,7 +350,6 @@ header nav .btn01 a span{
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ フッター ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 footer{
-	margin-top: 4rem;
 	padding: 3rem 0 2rem;
 }
 footer .copyright{
@@ -633,7 +632,7 @@ footer .copyright{
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ05 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .top05{
-	padding: 4rem 0 0;
+	padding: 4rem 0;
 }
 .top05 .box{
 	position: relative;
@@ -681,6 +680,7 @@ footer .copyright{
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .lower_top{
 	margin-top: 8rem;
+	padding-bottom: 4rem;
 }
 .lower_top .page_name{
 	position: relative;
@@ -902,6 +902,94 @@ footer .copyright{
 	letter-spacing: 0.1rem;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ career_system01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ business_work01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.business_work01{
+	background: url(../images/business_work/business_work01_back.png) center 20% / 1920px auto no-repeat;
+	padding: 0 0 12rem;
+}
+.business_work01 .txt{
+	margin-top: 0.5rem;
+}
+.business_work01 .txt p{
+	font-size: 1.125rem;
+	letter-spacing: 0.2rem;
+}
+.triangle{
+	width: 700px;
+	height: 5rem;
+	margin: 6rem auto 8rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.triangle .item{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 1.2rem 0.9rem 0 0.9rem;
+	border-color: #231815 transparent transparent transparent;
+}
+.triangle .item:nth-of-type(even){
+	margin-top: auto;
+}
+.business_work01 .links{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.business_work01 a{
+	margin-top: 4rem;
+	transition: .3s;
+}
+.business_work01 a:first-of-type{ margin-left: 4rem; }
+.business_work01 a:nth-of-type(2){
+	margin-left: auto;
+	margin-right: -3rem;
+}
+.business_work01 a:nth-of-type(4){ margin-left: -5rem; }
+.business_work01 a:nth-of-type(5){
+	margin-left: auto;
+	margin-right: -4rem;
+}
+.business_work01 a:nth-of-type(6){ margin-left: 3rem; }
+.business_work01 a span{
+	position: relative;
+	display: inline-block;
+	color: #fff;
+	z-index: 2;
+	padding: 0 1rem;
+}
+.business_work01 a .en{
+	font-size: 6.25rem;
+	line-height: 1;
+}
+.business_work01 a span::before{
+	position: absolute;
+	content: '';
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 40%;
+	background: #002f87;
+	z-index: -1;
+}
+.business_work01 a .en::before{
+	transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.business_work01 a .ja::before{
+	transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1) .15s;
+}
+.business_work01 a:hover span::before{
+	width: 100%;
+}
+.business_work01 a .ja{
+	font-size: 1.5rem;
+	letter-spacing: 0.15rem;
+	margin-left: 0.75rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ business_work01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ IE対策 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 @media all and (-ms-high-contrast: none) {
