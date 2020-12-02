@@ -268,7 +268,7 @@ header nav .btn01 a span{
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ フッター ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 footer{
-	padding: 3rem 0 2rem;
+	padding: 2rem 0;
 }
 footer .copyright{
 	font-size: 0.8rem;
@@ -521,7 +521,7 @@ footer .copyright{
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ05 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .top05{
-	padding: 2rem 0 1rem;
+	padding: 2rem 0;
 }
 .top05 .box{
 	position: relative;
@@ -588,7 +588,7 @@ footer .copyright{
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ recruit01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .recruit01{
-	padding: 2rem 0.25rem 1rem;
+	padding: 2rem 0.25rem;
 }
 .recruit01 table{
 	width: 100%;
@@ -643,7 +643,7 @@ footer .copyright{
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ career_system01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .career_system01{
-	padding: 1.5rem 0.25rem 3rem;
+	padding: 1.5rem 0.25rem 4rem;
 }
 .career_system01 .box{
 	margin-top: 2.5rem;
@@ -791,7 +791,7 @@ footer .copyright{
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ business_work01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .business_work01{
 	background: url(../images/business_work/business_work01_back.png) 60% bottom / 767px auto no-repeat;
-	padding: 0 0 7rem;
+	padding: 0 0 16rem;
 }
 .business_work01 .txt{
 	margin-top: 1rem;
