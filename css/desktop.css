@@ -915,7 +915,7 @@ footer .copyright{
 	font-size: 1.125rem;
 	letter-spacing: 0.2rem;
 }
-.triangle{
+.business_work01 .triangle{
 	width: 700px;
 	height: 5rem;
 	margin: 6rem auto 8rem;
@@ -923,14 +923,14 @@ footer .copyright{
 	justify-content: space-between;
 	align-items: flex-start;
 }
-.triangle .item{
+.business_work01 .triangle .item{
 	width: 0;
 	height: 0;
 	border-style: solid;
 	border-width: 1.2rem 0.9rem 0 0.9rem;
 	border-color: #231815 transparent transparent transparent;
 }
-.triangle .item:nth-of-type(even){
+.business_work01 .triangle .item:nth-of-type(even){
 	margin-top: auto;
 }
 .business_work01 .links{
@@ -943,7 +943,9 @@ footer .copyright{
 	margin-top: 4rem;
 	transition: .3s;
 }
-.business_work01 a:first-of-type{ margin-left: 4rem; }
+.business_work01 a:first-of-type{
+	margin: 0 0 0 4rem;
+}
 .business_work01 a:nth-of-type(2){
 	margin-left: auto;
 	margin-right: -3rem;
