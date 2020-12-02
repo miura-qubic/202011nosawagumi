@@ -1,9 +1,8 @@
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ ベース設定 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
-@font-face {
-	font-family: "myfont";
-	src: url(../fonts/.woff) format("woff"),
-				url(../fonts/.otf) format("otf");
+@font-face{
+	font-family: "impact";
+	src: url(../fonts/Impact.ttf) format("truetype");
 }
 body{-webkit-text-size-adjust: 100%;}
 html{
@@ -50,12 +49,12 @@ section,
 	margin: 0 auto;
 	padding:0 1.5rem;
 }
-/* .s_container{
+.s_container{
 	width: 100%;
 	max-width: 650px;
 	margin: 0 auto;
-	padding:0 2rem;
-} */
+	padding:0 1.5rem;
+}
 .is_pc{display: none;}
 .is_hidden_tab{display: none;}
 :root{
@@ -93,6 +92,7 @@ section,
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ ベース設定 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.impact{ font-family: "impact", sans-serif; }
 body.active{
 	overflow: hidden;
 }
@@ -642,15 +642,152 @@ footer .copyright{
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ recruit01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
-
-
-
-
-
-
-
-
-
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ career_step01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.career_step01{
+	padding: 1.5rem 0.25rem 2rem;
+}
+.career_step01 .box{
+	margin-top: 2.5rem;
+}
+.career_step01 .subttl{
+	font-size: 1.125rem;
+	font-weight: 600;
+	text-align: center;
+	letter-spacing: 0.1rem;
+	margin-bottom: 1.5rem;
+}
+.career_step01 h4{
+	font-size: 1.25rem;
+	font-weight: 600;
+	letter-spacing: 0.1rem;
+	text-align: center;
+}
+.career_step01 .box .item{
+	margin-top: 1.5rem;
+}
+.career_step01 .box .item .circle_wrap .inner{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.career_step01 .box .item .circle_wrap .inner:nth-of-type(2){
+	justify-content: flex-end;
+	margin-top: 1rem;
+}
+.career_step01 .box .item .circle_wrap .inner .circle{
+	border: solid 1px #000;
+	border-radius: 50%;
+	width: 5.25rem;
+	height: 5.25rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 1rem;
+}
+.career_step01 .box .item .circle_wrap .inner .circle:last-of-type{
+	margin-right: 0;
+}
+.career_step01 .box .item .circle_wrap .inner .circle p{
+	line-height: 1.5;
+	letter-spacing: 0.05rem;
+	text-align: center;
+}
+.career_step01 .box .item .cross{
+	position: relative;
+	width: 4rem;
+	height: 4rem;
+	margin: 1rem auto;
+}
+.career_step01 .box .item .cross::before,
+.career_step01 .box .item .cross::after{
+	position: absolute;
+	content: '';
+	width: 4rem;
+	height: 1px;
+	background: #000;
+	top: 50%;
+	left: 50%;
+}
+.career_step01 .box .item .cross::before{
+	transform: translate(-50%,-50%) rotate(45deg);
+}
+.career_step01 .box .item .cross::after{
+	transform: translate(-50%,-50%) rotate(-45deg);
+}
+.career_step01 .box .item .en{
+	font-size: 1.75rem;
+	text-align: center;
+	margin-top: 1rem;
+}
+.career_step01 .box .txt{
+	margin-top: 2rem;
+}
+.career_step01 .box .txt p{
+	letter-spacing: 0.1rem;
+}
+.career_step01 .box02{
+	margin-top: 5rem;
+}
+.career_step01 .box02 .main_item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+.career_step01 .box02 .main_item .txt{
+	order: 1;
+	margin-bottom: 2rem;
+}
+.career_step01 .box02 .main_item .img_wrap{
+	order: 2;
+	max-width: 280px;
+	width: 100%;
+}
+.career_step01 .box02 .main_item .img_wrap img{
+	width: 100%;
+	height: auto;
+}
+.career_step01 .box02 .main_item .img_wrap p{
+	font-size: 0.875rem;
+	text-align: right;
+	letter-spacing: 0.1rem;
+	margin-top: 0.25rem;
+}
+.career_step01 .box02 .system{
+	margin-top: 3.5rem;
+}
+.career_step01 .box02 .system .item{
+	margin-top: 3.5rem;
+}
+.career_step01 .box02 .system .item:first-of-type{
+	margin-top: 0;
+}
+.career_step01 .box02 .system .item h5{
+	position: relative;
+	font-size: 1.25rem;
+	font-weight: 600;
+	letter-spacing: 0.2rem;
+	text-align: center;
+}
+.career_step01 .box02 .system .item h5::after{
+	position: absolute;
+	content: '';
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%) translateY(0.75rem);
+	width: 2rem;
+	height: 1px;
+	background: #000;
+}
+.career_step01 .box02 .system .item .txt{
+	margin-top: 2rem;
+}
+.career_step01 .box02 .system .item .txt p{
+	font-size: 0.875rem;
+	letter-spacing: 0.05rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ career_step01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ プライバシーポリシー01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .privacypolicy01 .box{
