@@ -993,6 +993,100 @@ footer .copyright{
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ business_work01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ message01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.message01 .box{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.message01 .logo{
+	width: 20rem;
+	margin-bottom: 4rem;
+}
+.message01 .txt{
+	position: relative;
+	background: #fff;
+	padding: 3rem 2.5rem;
+	z-index: 2;
+}
+.message01 .txt:first-of-type{
+	width: 660px;
+}
+.message01 .txt:nth-of-type(2){
+	width: 710px;
+	margin: 10rem 0 0 auto;
+}
+.message01 .txt h3{
+	font-size: 1.75rem;
+	font-weight: 600;
+	letter-spacing: 0.2rem;
+	margin-bottom: 1.5rem;
+}
+.message01 .txt p{
+	font-size: 1.125rem;
+	line-height: 3;
+	letter-spacing: 0.1rem;
+}
+.message01 .txt p + p{
+	margin-top: 3rem;
+}
+.message01 .img{ position: absolute; }
+.message01 .img01{
+	top: 2rem;
+	right: 0;
+	max-width: 55rem;
+	width: 56%;
+}
+.message01 img{
+	width: 100%;
+	height: auto;
+}
+.message01 .img02{
+	width: 19.5rem;
+	top: 52rem;
+	right: 2.5rem;
+}
+.message01 .img03{
+	width: 34rem;
+	top: 64rem;
+	left: -6rem;
+}
+.message01 .img04{
+	width: 19rem;
+	top: 120rem;
+	left: 0;
+}
+.message01 .img05{
+	width: 27rem;
+	top: 145rem;
+	right: -6rem;
+}
+.message01 .txt02{
+	margin: 22rem auto 0;
+}
+.message01 .txt02 p{
+	text-align: center;
+	font-size: 1.75rem;
+	line-height: 3;
+	letter-spacing: 0.2rem;
+}
+.message01 .logo_wrap{
+	width: 22rem;
+	text-align: center;
+	margin: 5rem auto 0;
+}
+.message01 .logo_wrap .logo02{
+	margin-bottom: 1.25rem;
+}
+.message01 .logo_wrap p{
+	font-size: 1.25rem;
+	letter-spacing: 0.2rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ message01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ IE対策 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 @media all and (-ms-high-contrast: none) {
 
