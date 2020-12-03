@@ -1127,6 +1127,220 @@ footer .copyright{
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ message01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ development01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.development main{
+	margin: auto;
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	background-image:
+		repeating-linear-gradient(to bottom,
+				transparent 12px,
+				rgba(203, 202, 200, 0.3) 13px, rgba(203, 202, 200, 0.3) 13px,
+				transparent 14px, transparent 25px,
+				rgba(203, 202, 200, 0.3) 26px, rgba(203, 202, 200, 0.3) 26px,
+				transparent 27px, transparent 38px,
+				rgba(203, 202, 200, 0.3) 39px, rgba(203, 202, 200, 0.3) 39px,
+				transparent 40px, transparent 51px,
+				rgba(203, 202, 200, 0.3) 52px, rgba(203, 202, 200, 0.3) 52px,
+				transparent 53px, transparent 64px,
+				rgba(203, 202, 200, 0.3) 65px, rgba(203, 202, 200, 0.3) 65px),
+
+		repeating-linear-gradient(to right,
+				transparent 12px,
+				rgba(203, 202, 200, 0.3) 13px, rgba(203, 202, 200, 0.3) 13px,
+				transparent 14px, transparent 25px,
+				rgba(203, 202, 200, 0.3) 26px, rgba(203, 202, 200, 0.3) 26px,
+				transparent 27px, transparent 38px,
+				rgba(203, 202, 200, 0.3) 39px, rgba(203, 202, 200, 0.3) 39px,
+				transparent 40px, transparent 51px,
+				rgba(203, 202, 200, 0.3) 52px, rgba(203, 202, 200, 0.3) 52px,
+				transparent 53px, transparent 64px,
+				rgba(203, 202, 200, 0.3) 65px, rgba(203, 202, 200, 0.3) 65px);
+}
+.development01{
+	padding: 8rem 0 6rem;
+}
+.development01 .box{
+	position: relative;
+	padding-left: 3rem;
+}
+.development01 h1{
+	display: flex;
+	align-items: center;
+	font-size: 3.25rem;
+	margin-bottom: 1rem;
+}
+.development01 h1 span{
+	font-size: 1.5rem;
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+	font-weight: 600;
+	letter-spacing: 0.2rem;
+	margin-left: 1rem;
+}
+.development01 h2{
+	position: absolute;
+	font-size: 1.75rem;
+	font-weight: 600;
+	letter-spacing: 0.2rem;
+	white-space: nowrap;
+	top: -3rem;
+	right: 1rem;
+}
+.development01 .txt01{
+	width: 950px;
+	padding-left: 3rem;
+}
+.development01 .txt01 p{
+	font-size: 1.125rem;
+	letter-spacing: 0.2rem;
+}
+.development01 .fig01{
+	width: 2rem;
+	margin: 5rem auto;
+}
+
+.development01 .item{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 4rem;
+}
+.development01 .item:first-of-type{
+	margin-top: 0;
+}
+.development01 .item .img{
+	width: 31%;
+}
+.development01 .item .img img{
+	width: 100%;
+	height: auto;
+}
+.development01 .item .txt02{
+	width: 65%;
+}
+.development01 .item .txt02 h3{
+	font-size: 1.5rem;
+	font-weight: 600;
+	letter-spacing: 0.2rem;
+	margin-bottom: 1rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ development01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ development02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.development02 .box{
+	background: #d8d8d8;
+	margin: 0 -2rem;
+	padding: 2.5rem 4rem 3.5rem;
+}
+.development02 h2{
+	font-size: 1.5rem;
+	font-weight: 600;
+	letter-spacing: 0.2rem;
+	text-align: center;
+	margin-bottom: 2.5rem;
+}
+.development02 .item{
+	display: flex;
+	justify-content: space-between;
+}
+.development02 .item .txt{
+	width: 63%;
+}
+.development02 .item .txt .inner{
+	margin-top: 2.5rem;
+}
+.development02 .item .txt .inner:first-of-type{
+	margin-top: 0;
+}
+.development02 .item .txt .inner h3{
+	font-size: 1.75rem;
+	font-weight: 600;
+	letter-spacing: 0.2rem;
+	margin-bottom: 0.5rem;
+}
+.development02 .item .txt .inner p{
+	letter-spacing: 0.1rem;
+}
+
+.development02 .item .img{
+	width: 34%;
+}
+.development02 .item .img img{
+	width: 100%;
+	height: auto;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ development02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ development02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.development03{
+	padding: 6rem 0;
+}
+.development03 h2{
+	font-size: 1.5rem;
+	font-weight: 600;
+	letter-spacing: 0.2rem;
+	text-align: center;
+	margin-bottom: 2.5rem;
+}
+.development03 .main_item{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 5rem;
+}
+.development03 .main_item .img{
+	width: 13rem;
+}
+.development03 .main_item .txt{
+	margin-left: 2rem;
+}
+.development03 .main_item .txt h3{
+	font-size: 1.75rem;
+	font-weight: 600;
+	letter-spacing: 0.2rem;
+	margin-bottom: 1rem;
+}
+.development03 .main_item .txt p{
+	font-size: 1.125rem;
+	letter-spacing: 0.1rem;
+}
+.development03 .item{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 4rem;
+}
+.development03 .item .txt{
+	width: 70%;
+}
+.development03 .item .txt h4{
+	font-size: 1.5rem;
+	font-weight: 600;
+	letter-spacing: 0.2rem;
+	margin-bottom: 1rem;
+}
+.development03 .item .txt p{
+	letter-spacing: 0.1rem;
+}
+.development03 .item .img{
+	width: 27%;
+}
+.development03 .bottom_item{
+	margin-top: 5rem;
+}
+.development03 .bottom_item .fig01{
+	width: 6.5rem;
+	margin: 0 auto 1.25rem;
+}
+.development03 .bottom_item .logo{
+	width: 18rem;
+	margin: 0 auto;
+}
+.development03 .bottom_item img{
+	width: 100%;
+	height: auto;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ development03 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ IE対策 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 @media all and (-ms-high-contrast: none) {
