@@ -1186,6 +1186,9 @@ footer .copyright{
 	white-space: nowrap;
 	top: -3rem;
 	right: 1rem;
+	-ms-writing-mode: tb-rl;
+	-webkit-writing-mode: vertical-rl;
+	writing-mode: vertical-rl;
 }
 .development01 .txt01{
 	width: 950px;
@@ -1197,7 +1200,7 @@ footer .copyright{
 }
 .development01 .fig01{
 	width: 2rem;
-	margin: 5rem auto;
+	margin: 5rem auto 4rem;
 }
 
 .development01 .item{
@@ -1305,6 +1308,12 @@ footer .copyright{
 	font-size: 1.125rem;
 	letter-spacing: 0.1rem;
 }
+.development03 .main_item .txt p span{
+	margin-right: 1rem;
+}
+.development03 .main_item .txt p span:last-of-type{
+	margin-right: 0;
+}
 .development03 .item{
 	display: flex;
 	justify-content: space-between;
@@ -1324,6 +1333,10 @@ footer .copyright{
 }
 .development03 .item .img{
 	width: 27%;
+}
+.development03 .item .img img{
+	width: 100%;
+	height: auto;
 }
 .development03 .bottom_item{
 	margin-top: 5rem;

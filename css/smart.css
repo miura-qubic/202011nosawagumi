@@ -985,8 +985,210 @@ footer .copyright{
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ message01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ development01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.development01{
+	padding: 2rem 0.25rem 1rem;
+}
+.development01 h1{
+	font-size: 2.875rem;
+	line-height: 1.5;
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+.development01 h1 span{
+	display: block;
+	font-size: 1.25rem;
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+	font-weight: 600;
+	letter-spacing: 0.1rem;
+}
+.development01 h2{
+	font-size: 1.25rem;
+	font-weight: 600;
+	letter-spacing: 0.1rem;
+	text-align: center;
+	margin-bottom: 1.75rem;
+}
+.development01 .txt01 p{
+	letter-spacing: 0.05rem;
+}
+.development01 .fig01{
+	width: 2rem;
+	margin: 2.5rem auto;
+}
+
+.development01 .item{
+	margin-top: 3.5rem;
+}
+.development01 .item:first-of-type{
+	margin-top: 0;
+}
+.development01 .item .img{
+	width: 88%;
+	margin: 0 auto 1.75rem;
+}
+.development01 .item .img img{
+	width: 100%;
+	height: auto;
+}
+.development01 .item .txt02 h3{
+	font-size: 1.25rem;
+	font-weight: 600;
+	letter-spacing: 0.1rem;
+	margin-bottom: 1.25rem;
+}
+.development01 .item .txt02 p{
+	font-size: 0.875rem;
+	letter-spacing: 0.05rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ development01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ development02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.development02 .box{
+	background: #d8d8d8;
+	margin: 0 -0.75rem;
+	padding: 2rem 1.5rem 3rem;
+}
+.development02 h2{
+	font-size: 1.125rem;
+	font-weight: 600;
+	letter-spacing: 0.2rem;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+.development02 .item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+.development02 .item .img{
+	width: 80%;
+	order: 1;
+	margin-bottom: 2rem;
+}
+.development02 .item .img img{
+	width: 100%;
+	height: auto;
+}
+.development02 .item .txt{
+	order: 2;
+}
+.development02 .item .txt .inner{
+	margin-top: 2rem;
+}
+.development02 .item .txt .inner:first-of-type{
+	margin-top: 0;
+}
+.development02 .item .txt .inner h3{
+	font-size: 1.25rem;
+	font-weight: 600;
+	letter-spacing: 0.1rem;
+	margin-bottom: 0.75rem;
+	text-align: center;
+}
+.development02 .item .txt .inner p{
+	font-size: 0.875rem;
+	letter-spacing: 0.05rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ development02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ development03 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.development03{
+	padding: 4rem 0 3rem;
+}
+.development03 h2{
+	font-size: 1.125rem;
+	font-weight: 600;
+	letter-spacing: 0.2rem;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+.development03 .main_item{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: -1rem;
+	padding: 0 0.75rem;
+}
+.development03 .main_item .img{
+	width: 9rem;
+}
+.development03 .main_item .txt{
+	width: 9rem;
+	margin-left: 2rem;
+}
+.development03 .main_item .txt p{
+	letter-spacing: 0.05rem;
+}
+.development03 .main_item .txt p span{
+	display: block;
+	line-height: 1.5;
+}
+.development03 .main_item .txt p span + span{
+	margin-top: 0.75rem;
+}
+
+.development03 .main_item h3{
+	font-size: 1.25rem;
+	font-weight: 600;
+	letter-spacing: 0.1rem;
+	margin-top: 2rem;
+	text-align: center;
+}
+.development03 .item{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	margin-top: 3.5rem;
+}
+.development03 .item:first-of-type{
+	margin-top: 0;
+}
+.development03 .item .img{
+	order: 1;
+	width: 70%;
+	margin: 0 auto 1.5rem;
+}
+.development03 .item .img img{
+	width: 100%;
+	height: auto;
+}
+.development03 .item .txt{
+	order: 2;
+}
+.development03 .item .txt h4{
+	font-size: 1.25rem;
+	font-weight: 600;
+	letter-spacing: 0.1rem;
+	margin-bottom: 1rem;
+}
+.development03 .item .txt p{
+	font-size: 0.875rem;
+	letter-spacing: 0.05rem;
+}
+.development03 .bottom_item{
+	margin-top: 4rem;
+}
+.development03 .bottom_item .fig01{
+	width: 6rem;
+	margin: 0 auto 1.25rem;
+}
+.development03 .bottom_item .logo{
+	width: 13rem;
+	margin: 0 auto;
+}
+.development03 .bottom_item img{
+	width: 100%;
+	height: auto;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ development03 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ プライバシーポリシー01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .privacypolicy01 .box{
+	order: 1;
 	margin: 0 auto;
 }
 .privacypolicy01 .box h1{
