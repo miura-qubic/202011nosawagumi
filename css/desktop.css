@@ -1011,10 +1011,10 @@ footer .copyright{
 	padding: 3rem 2.5rem;
 	z-index: 4;
 }
-.message01 .txt:first-of-type{
+.message01 .txt01{
 	width: 660px;
 }
-.message01 .txt:nth-of-type(2){
+.message01 .txt02{
 	width: 710px;
 	margin: 10rem 0 0 auto;
 }
@@ -1067,10 +1067,10 @@ footer .copyright{
 	right: -6rem;
 	z-index: 3;
 }
-.message01 .txt02{
+.message01 .txt03{
 	margin: 23rem auto 0;
 }
-.message01 .txt02 p{
+.message01 .txt03 p{
 	text-align: center;
 	font-size: 1.75rem;
 	line-height: 3;

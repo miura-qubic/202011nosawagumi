@@ -23,6 +23,7 @@ a{
 	width: 100%;
 	height: 100%;
 	margin-top: 10rem;
+	overflow: hidden;
 }
 #wrapper.lower{
 	margin-top: 6rem;
@@ -852,6 +853,137 @@ footer .copyright{
 	margin-left: 0.25rem;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ business_work01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ message01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.message01{
+	padding: 0 0 2rem;
+}
+.message01 .box{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.message01 .logo{
+	width: 16rem;
+	margin: 0 auto 2.5rem;
+}
+.message01 .img01{
+	max-width: 290px;
+	width: 90%;
+	margin: 0 auto 3.5rem;
+}
+.message01 img{
+	width: 100%;
+	height: auto;
+}
+.message01 .txt{
+	position: relative;
+	padding: 0 0.25rem;
+	z-index: 4;
+}
+.message01 .txt01{
+	order: 1;
+}
+.message01 .txt02{
+	margin-top: 30rem;
+	order: 4;
+}
+.message01 .txt h3{
+	font-size: 1.5rem;
+	font-weight: 600;
+	letter-spacing: 0.2rem;
+	margin-bottom: 1.5rem;
+}
+.message01 .txt p{
+	letter-spacing: 0.1rem;
+}
+.message01 .txt p + p{
+	margin-top: 2rem;
+}
+.message01 .img02{
+	width: 12.5rem;
+	margin: -3.5rem 0 0 auto;
+	z-index: 3;
+	order: 2;
+}
+.message01 .img03{
+	width: 300px;
+	margin-top: 7rem;
+	order: 3;
+}
+.message01 .img04{
+	width: 12.5rem;
+	margin-top: 5rem;
+	order: 5;
+	z-index: 3;
+}
+.message01 .img05{
+	width: 18.5rem;
+	margin: 5rem 0 0 auto;
+	order: 6;
+}
+.message01 .txt03{
+	margin: 50rem auto 0;
+	order: 7;
+}
+.message01 .txt03 p{
+	text-align: center;
+	font-size: 1.5rem;
+	line-height: 2.5;
+	letter-spacing: 0.2rem;
+}
+.message01 .logo_wrap{
+	width: 275px;
+	text-align: center;
+	margin: 3.5rem auto 0;
+	order: 8;
+}
+.message01 .logo_wrap .logo02{
+	margin-bottom: 0.75rem;
+}
+.message01 .logo_wrap p{
+	letter-spacing: 0.2rem;
+}
+
+.message01 .fig01{
+	width: 100%;
+	top: 61rem;
+	left: 0;
+	z-index: 2;
+}
+.message01 .fig02{
+	width: 4.5rem;
+	top: 83rem;
+	right: 2.5rem;
+	z-index: 2;
+}
+.message01 .fig03{
+	width: 8.5rem;
+	top: 93rem;
+	left: 1.75rem;
+	z-index: 2;
+}
+.message01 .fig04{
+	width: 130%;
+	top: 140rem;
+	left: -15%;
+	z-index: 2;
+}
+.message01 .fig05{
+	width: 7rem;
+	top: 185rem;
+	left: 2rem;
+	z-index: 2;
+}
+.message01 .fig06{
+	width: 4.5rem;
+	top: 196rem;
+	right: 3rem;
+	z-index: 2;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ message01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ プライバシーポリシー01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .privacypolicy01 .box{
