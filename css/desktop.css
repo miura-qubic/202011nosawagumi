@@ -1003,13 +1003,13 @@ footer .copyright{
 }
 .message01 .logo{
 	width: 20rem;
-	margin-bottom: 4rem;
+	margin: -1rem 0 6rem;
 }
 .message01 .txt{
 	position: relative;
 	background: #fff;
 	padding: 3rem 2.5rem;
-	z-index: 2;
+	z-index: 4;
 }
 .message01 .txt:first-of-type{
 	width: 660px;
@@ -1034,10 +1034,11 @@ footer .copyright{
 }
 .message01 .img{ position: absolute; }
 .message01 .img01{
-	top: 2rem;
+	top: 0;
 	right: 0;
-	max-width: 55rem;
-	width: 56%;
+	max-width: 53rem;
+	width: 55%;
+	z-index: 3;
 }
 .message01 img{
 	width: 100%;
@@ -1045,8 +1046,9 @@ footer .copyright{
 }
 .message01 .img02{
 	width: 19.5rem;
-	top: 52rem;
+	top: 47rem;
 	right: 2.5rem;
+	z-index: 3;
 }
 .message01 .img03{
 	width: 34rem;
@@ -1055,16 +1057,18 @@ footer .copyright{
 }
 .message01 .img04{
 	width: 19rem;
-	top: 120rem;
+	top: 116rem;
 	left: 0;
+	z-index: 3;
 }
 .message01 .img05{
 	width: 27rem;
-	top: 145rem;
+	top: 135rem;
 	right: -6rem;
+	z-index: 3;
 }
 .message01 .txt02{
-	margin: 22rem auto 0;
+	margin: 23rem auto 0;
 }
 .message01 .txt02 p{
 	text-align: center;
@@ -1083,6 +1087,43 @@ footer .copyright{
 .message01 .logo_wrap p{
 	font-size: 1.25rem;
 	letter-spacing: 0.2rem;
+}
+
+.message01 .fig01{
+	width: 92%;
+	top: 0rem;
+	left: 0;
+	z-index: 2;
+}
+.message01 .fig02{
+	width: 7rem;
+	top: 60rem;
+	right: -4rem;
+	z-index: 2;
+}
+.message01 .fig03{
+	width: 17rem;
+	top: 83rem;
+	left: -2.5rem;
+	z-index: 2;
+}
+.message01 .fig04{
+	width: 100%;
+	top: 84rem;
+	left: 0;
+	z-index: 2;
+}
+.message01 .fig05{
+	width: 11rem;
+	top: 138rem;
+	left: -4rem;
+	z-index: 2;
+}
+.message01 .fig06{
+	width: 4.5rem;
+	top: 152rem;
+	right: -1.5rem;
+	z-index: 2;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ message01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
