@@ -985,6 +985,57 @@ footer .copyright{
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ message01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ history01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.history01 .box{
+	position: relative;
+	padding-top: 1rem;
+}
+.history01 .ttl_wrap .ttl{
+	text-align: left;
+	line-height: 1.6;
+}
+.history01 .ttl_wrap .ttl span{
+	display: block;
+	font-size: 1.25rem;
+	font-weight: 600;
+	letter-spacing: 0.1rem;
+	margin-top: 0.75rem;
+}
+.history01 .years{
+	position: absolute;
+	top: 0;
+	right: -1rem;
+	font-size: 3.1rem;
+	line-height: 1;
+	white-space: nowrap;
+}
+.history01 .history_box{
+	margin-top: 5.5rem;
+}
+.history01 .history_box .img{
+	position: relative;
+	display: block;
+}
+.history01 .history_box .img:first-of-type::after{
+	position: absolute;
+	content: '';
+	width: 1px;
+	height: 450px;
+	top: -449px;
+	right: 13.1%;
+	background: #231815;
+}
+.history01 .history_box .img:last-of-type::after{
+	position: absolute;
+	content: '';
+	width: 1.1px;
+	height: 450px;
+	bottom: -449px;
+	right: 23.45rem;
+	background: #231815;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ history01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ development01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .development01{
 	padding: 2rem 0.25rem 1rem;
