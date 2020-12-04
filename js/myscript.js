@@ -42,4 +42,15 @@ $(function () {
 		}
 	});
 
+	$(window).on('scroll load',function(){
+		$('.history01 .history_box .img').each(function () {
+			var position = $(this).offset().top;
+			var scroll = $(window).scrollTop();
+			var windowHeight = $(window).height();
+			if (scroll > position - windowHeight + 200) {
+				$(this).addClass('active');
+			}
+		});
+	});
+
 });
