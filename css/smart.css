@@ -1010,7 +1010,7 @@ footer .copyright{
 	white-space: nowrap;
 }
 .history01 .history_box{
-	margin-top: 5.5rem;
+	margin: 5.5rem 0 16rem;
 }
 .history01 .history_box .img{
 	position: relative;
@@ -1029,10 +1029,326 @@ footer .copyright{
 	position: absolute;
 	content: '';
 	width: 1.1px;
-	height: 450px;
-	bottom: -449px;
-	right: 23.45rem;
+	height: 700px;
+	bottom: -699px;
+	left: 13.1%;
 	background: #231815;
+}
+.history01 .history_box .img::before{
+	position: absolute;
+	content: '';
+	top: 0.4rem;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0.5rem 0.4rem 0 0.4rem;
+	border-color: #000 transparent transparent transparent;
+	opacity : 0;
+	transform : translateY(20px);
+	transition : .5s ease;
+}
+.fadein{
+	opacity : 0;
+	transform : translateY(20px);
+	transition : .5s ease;
+}
+.history01 .history_box .img.active::before{
+	opacity : 1;
+	transform : translateY(0);
+}
+.history01 .history_box .img:nth-of-type(1)::before,
+.history01 .history_box .img:nth-of-type(2)::before,
+.history01 .history_box .img:nth-of-type(3)::before,
+.history01 .history_box .img:nth-of-type(4)::before{
+	right: 11.7%;
+}
+.history01 .history_box .img:nth-of-type(5)::before,
+.history01 .history_box .img:nth-of-type(6)::before,
+.history01 .history_box .img:nth-of-type(7)::before,
+.history01 .history_box .img:nth-of-type(8)::before,
+.history01 .history_box .img:nth-of-type(13)::before,
+.history01 .history_box .img:nth-of-type(14)::before,
+.history01 .history_box .img:nth-of-type(15)::before,
+.history01 .history_box .img:nth-of-type(16)::before{
+	left: 11.7%;
+}
+.history01 .history_box .img:nth-of-type(9)::before,
+.history01 .history_box .img:nth-of-type(10)::before,
+.history01 .history_box .img:nth-of-type(11)::before,
+.history01 .history_box .img:nth-of-type(12)::before{
+	top: 0.6rem;
+	right: 11.7%;
+}
+.history01 .fig{
+	position: absolute;
+	z-index: -1;
+}
+.history01 .fig01{
+	right: 25%;
+	width: 1.6rem;
+	animation: historyUpdown01 12s linear infinite;
+}
+.history01 .fig02{
+	right: 5%;
+	width: 5.5rem;
+	animation: historyUpdown02 15s linear infinite;
+}
+.history01 .fig03{
+	left: 9%;
+	width: 3.3rem;
+	animation: historyUpdown03 12s linear infinite;
+}
+.history01 .fig04{
+	right: 12%;
+	width: 2.25rem;
+	animation: historyUpdown04 12s linear infinite;
+}
+.history01 .fig05{
+	left: 28%;
+	width: 2.4rem;
+	animation: historyUpdown05 12s linear infinite;
+}
+.history01 .fig06{
+	right: 20%;
+	width: 1.5rem;
+	animation: historyUpdown06 12s linear infinite;
+}
+.history01 .fig07{
+	left: 20%;
+	width: 2.5rem;
+	animation: historyUpdown07 12s linear infinite;
+}
+.history01 .fig08{
+	right: 24%;
+	width: 1.2rem;
+	animation: historyUpdown08 12s linear infinite;
+}
+.history01 .fig09{
+	left: 3%;
+	width: 7rem;
+	animation: historyUpdown09 15s linear infinite;
+}
+.history01 .fig10{
+	left: 35%;
+	width: 2.2rem;
+	animation: historyUpdown10 12s linear infinite;
+}
+.history01 .fig11{
+	right: 12%;
+	width: 4.2rem;
+	animation: historyUpdown11 14s linear infinite;
+}
+.history01 .fig12{
+	left: 25%;
+	width: 3.4rem;
+	animation: historyUpdown12 15s linear infinite;
+}
+.history01 .fig13{
+	right: 17%;
+	width: 1.7rem;
+	animation: historyUpdown13 12s linear infinite;
+}
+.history01 .fig14{
+	left: 28%;
+	width: 8.7rem;
+	animation: historyUpdown14 16s linear infinite;
+}
+
+@keyframes historyUpdown01{
+	0%{
+		top: 8rem;
+		transform: rotate(0);
+	}
+	50%{
+		top: 14rem;
+		transform: rotate(180deg);
+	}
+	100%{
+		top: 8rem;
+		transform: rotate(360deg);
+	}
+}
+@keyframes historyUpdown02{
+	0%{
+		top: 28rem;
+		transform: rotate(0);
+	}
+	50%{
+		top: 37rem;
+		transform: rotate(180deg);
+	}
+	100%{
+		top: 28rem;
+		transform: rotate(360deg);
+	}
+}
+@keyframes historyUpdown03{
+	0%{
+		top: 62rem;
+		transform: rotate(0);
+	}
+	50%{
+		top: 68rem;
+		transform: rotate(180deg);
+	}
+	100%{
+		top: 62rem;
+		transform: rotate(360deg);
+	}
+}
+@keyframes historyUpdown04{
+	0%{
+		top: 94rem;
+		transform: rotate(0);
+	}
+	50%{
+		top: 100rem;
+		transform: rotate(180deg);
+	}
+	100%{
+		top: 94rem;
+		transform: rotate(360deg);
+	}
+}
+@keyframes historyUpdown05{
+	0%{
+		top: 156rem;
+		transform: rotate(0);
+	}
+	50%{
+		top: 162rem;
+		transform: rotate(180deg);
+	}
+	100%{
+		top: 156rem;
+		transform: rotate(360deg);
+	}
+}
+@keyframes historyUpdown06{
+	0%{
+		top: 184rem;
+		transform: rotate(0);
+	}
+	50%{
+		top: 190rem;
+		transform: rotate(180deg);
+	}
+	100%{
+		top: 184rem;
+		transform: rotate(360deg);
+	}
+}
+@keyframes historyUpdown07{
+	0%{
+		top: 223rem;
+		transform: rotate(0);
+	}
+	50%{
+		top: 230rem;
+		transform: rotate(180deg);
+	}
+	100%{
+		top: 223rem;
+		transform: rotate(360deg);
+	}
+}
+@keyframes historyUpdown08{
+	0%{
+		top: 271rem;
+		transform: rotate(0);
+	}
+	50%{
+		top: 277rem;
+		transform: rotate(180deg);
+	}
+	100%{
+		top: 271rem;
+		transform: rotate(360deg);
+	}
+}
+@keyframes historyUpdown09{
+	0%{
+		top: 294rem;
+		transform: rotate(0);
+	}
+	50%{
+		top: 303rem;
+		transform: rotate(180deg);
+	}
+	100%{
+		top: 294rem;
+		transform: rotate(360deg);
+	}
+}
+@keyframes historyUpdown10{
+	0%{
+		top: 320rem;
+		transform: rotate(0);
+	}
+	50%{
+		top: 326rem;
+		transform: rotate(180deg);
+	}
+	100%{
+		top: 320rem;
+		transform: rotate(360deg);
+	}
+}
+@keyframes historyUpdown11{
+	0%{
+		top: 340rem;
+		transform: rotate(0);
+	}
+	50%{
+		top: 348rem;
+		transform: rotate(180deg);
+	}
+	100%{
+		top: 340rem;
+		transform: rotate(360deg);
+	}
+}
+@keyframes historyUpdown12{
+	0%{
+		top: 403rem;
+		transform: rotate(0);
+	}
+	50%{
+		top: 409rem;
+		transform: rotate(180deg);
+	}
+	100%{
+		top: 403rem;
+		transform: rotate(360deg);
+	}
+}
+@keyframes historyUpdown13{
+	0%{
+		top: 436rem;
+		transform: rotate(0);
+	}
+	50%{
+		top: 442rem;
+		transform: rotate(180deg);
+	}
+	100%{
+		top: 436rem;
+		transform: rotate(360deg);
+	}
+}
+@keyframes historyUpdown14{
+	0%{
+		top: 444rem;
+		transform: rotate(0);
+	}
+	50%{
+		top: 452rem;
+		transform: rotate(180deg);
+	}
+	100%{
+		top: 444rem;
+		transform: rotate(360deg);
+	}
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ history01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
