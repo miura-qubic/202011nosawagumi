@@ -327,6 +327,7 @@ header nav .btn01 a span{
 
 .menu_open{
 	width: 4rem;
+	height: 4rem;
 	position: relative;
 	cursor: pointer;
 	z-index: 50002;

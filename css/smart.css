@@ -162,19 +162,19 @@ header.active,
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
-	padding: 1.5rem 0;
+	/* padding: 1.5rem 0; */
 	transition: .3s;
 }
 .header_in .logo{
 	width: 7rem;
-	margin: 1.5rem 0 0 50%;
+	margin: 2.5rem 0 0 50%;
 	transform: translateX(-50%);
 	transition: .3s;
 }
 header.active .header_in .logo,
 .lower header .header_in .logo{
 	width: 4.5rem;
-	margin: -0.5rem 0 0;
+	margin: 1rem 0 0;
 	transform: translateX(1.5rem);
 }
 .header_in .logo a{
@@ -247,6 +247,8 @@ header nav .btn01 a span{
 
 .menu_open{
 	width: 3rem;
+	height: 3rem;
+	display: flex;
 	position: relative;
 	z-index: 50002;
 }
@@ -915,7 +917,7 @@ footer .copyright{
 }
 .message01 .img04{
 	width: 12.5rem;
-	margin-top: 5rem;
+	/* margin-top: 5rem; */
 	order: 5;
 	z-index: 3;
 }
@@ -925,7 +927,7 @@ footer .copyright{
 	order: 6;
 }
 .message01 .txt03{
-	margin: 50rem auto 0;
+	margin: 40rem auto 0;
 	order: 7;
 }
 .message01 .txt03 p{
@@ -973,13 +975,13 @@ footer .copyright{
 }
 .message01 .fig05{
 	width: 7rem;
-	top: 185rem;
+	top: 175rem;
 	left: 2rem;
 	z-index: 2;
 }
 .message01 .fig06{
 	width: 4.5rem;
-	top: 196rem;
+	top: 186rem;
 	right: 3rem;
 	z-index: 2;
 }
